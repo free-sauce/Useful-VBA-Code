@@ -1,0 +1,13 @@
+Sub Dragdownlastrow()
+
+
+'Drag down final row - Active
+Range("A" & Rows.Count).End(xlUp).EntireRow.Resize(2).FillDown
+
+End Sub
+
+
+Sub Deletelastrow()
+'Delete final row - Active
+Range("A" & Rows.Count).End(xlUp).EntireRow.Delete
+End Sub
